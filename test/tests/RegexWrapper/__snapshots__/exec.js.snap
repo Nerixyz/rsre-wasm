@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegexWrapper#exec snapshots /(hello \\S+)/ should match the snapshot 1`] = `
+Object {
+  "execResult": "{\\"matches\\":[\\"hello world!\\",\\"hello world!\\"],\\"index\\":10,\\"input\\":\\"This is a hello world!\\"}",
+  "postIdx": 0,
+  "preIdx": 0,
+}
+`;
+
+exports[`RegexWrapper#exec snapshots /ab*/ should match the snapshot 1`] = `
+Array [
+  Object {
+    "execResult": "{\\"matches\\":[\\"abb\\"],\\"index\\":0,\\"input\\":\\"abbcdefabh\\"}",
+    "postIdx": 3,
+    "preIdx": 0,
+  },
+  Object {
+    "execResult": "{\\"matches\\":[\\"ab\\"],\\"index\\":7,\\"input\\":\\"abbcdefabh\\"}",
+    "postIdx": 9,
+    "preIdx": 3,
+  },
+]
+`;
+
+exports[`RegexWrapper#exec snapshots /data/ should match the snapshot 1`] = `
+Object {
+  "execResult": "null",
+  "postIdx": 0,
+  "preIdx": 0,
+}
+`;
+
+exports[`RegexWrapper#exec snapshots /data/ should match the snapshot 2`] = `
+Object {
+  "execResult": "null",
+  "postIdx": 0,
+  "preIdx": 0,
+}
+`;
+
+exports[`RegexWrapper#exec snapshots /data/ should match the snapshot 3`] = `
+Array [
+  Object {
+    "execResult": "{\\"matches\\":[\\"data\\"],\\"index\\":0,\\"input\\":\\"data test\\"}",
+    "postIdx": 4,
+    "preIdx": 0,
+  },
+  Object {
+    "execResult": "null",
+    "postIdx": 0,
+    "preIdx": 4,
+  },
+]
+`;
+
+exports[`RegexWrapper#exec snapshots /public static void (\\w+)\\(/ should match the snapshot 1`] = `
+Array [
+  Object {
+    "execResult": "{\\"matches\\":[\\"public static void main(\\",\\"main\\"],\\"index\\":0,\\"input\\":\\"public static void main() public static void test() public final String\\"}",
+    "postIdx": 24,
+    "preIdx": 0,
+  },
+  Object {
+    "execResult": "{\\"matches\\":[\\"public static void test(\\",\\"test\\"],\\"index\\":26,\\"input\\":\\"public static void main() public static void test() public final String\\"}",
+    "postIdx": 50,
+    "preIdx": 24,
+  },
+]
+`;

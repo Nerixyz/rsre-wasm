@@ -1,0 +1,10 @@
+{
+  "exec": [
+      [["ab*", "g"], ["abbcdefabh", 2]],
+      ["(hello \\S+)", "This is a hello world!"],
+      [["public static void (\\w+)\\(", "g"], ["public static void main() public static void test() public final String", 2]],
+      [["data", "y"], "test data"],
+      [["data", "y"], "tdata"],
+      [["data", "y"], ["data test", 2]]
+    ]
+}

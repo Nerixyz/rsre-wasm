@@ -1,0 +1,10 @@
+/target
+**/*.rs.bk
+Cargo.lock
+bin/
+pkg/
+pkg-node/
+wasm-pack.log
+.idea
+.code
+node_modules
